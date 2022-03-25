@@ -11,7 +11,7 @@
 
 <div id="events-container" class="col-md-12">
     @if($search)
-    <h2>Buscando por: {{ $search }}</h2>
+    <h2>Buscando por:? {{ $search }}</h2>
     @else
     <h2>Próximos Eventos</h2>
     <p class="subtitle">Veja os eventos dos próximos dias</p>
