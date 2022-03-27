@@ -26,7 +26,7 @@
 
         <div class="form-group">
             <label for="title">Cidade:</label>
-            <input type="text" class="form-control" id="city" name="city" placeholder="Local do evento" value="$event->city">
+            <input type="text" class="form-control" id="city" name="city" placeholder="Local do evento" value="{{ $event->city }}">
         </div>
 
         <div class="form-group">
@@ -67,7 +67,7 @@
             </div>
 
         </div>
-        <input type="submit" class="btn btn-primary" value="Criar Evento">
+        <input type="submit" class="btn btn-primary" value="Editar Evento">
     </form>
 </div>
 
