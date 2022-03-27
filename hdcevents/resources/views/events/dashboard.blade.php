@@ -13,7 +13,7 @@
         <thead>
             <tr>
                 <th scope="col">#</th>
-                <th scope="col">Nome e sobrenome</th>
+                <th scope="col">Nome</th>
                 <th scope="col">Participantes</th>
                 <th scope="col">Ações</th>
             </tr>
