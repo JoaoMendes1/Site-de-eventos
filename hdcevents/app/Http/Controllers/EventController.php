@@ -95,7 +95,7 @@ class EventController extends Controller
 
         $event = Event::findOrFail($id);
 
-        return view ('events.edit', ['event' => $edit]);
+        return view ('events.edit', ['event' => $event]);
     }
 
 }
