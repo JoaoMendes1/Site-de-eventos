@@ -12,13 +12,13 @@
                 <p class="event-city"><ion-icon name="location-outline"></ion-icon> {{  $event->city }}</p>
                 <p class="events-participantes"> <ion-icon name="people-outline"></ion-icon> 40.000 Participantes</p>
                 
-                <form action="/events/join/ {{ $event->id }}" method="POST">
+                <form action="/events/join/{{ $event->id }}" method="POST">
                     @csrf
-                    <a href="/events/join/ {{ $event->id }}"
+                    <a href="/events/join/{{ $event->id }}"
                      class="btn btn-primary" 
                      id="event-submit"
                      onclick="event.preventDefault();
-                     this.closet('form').submit();">
+                     this.closest('form').submit();">
                      Confirmar presença
                     </a>
                 </form>
