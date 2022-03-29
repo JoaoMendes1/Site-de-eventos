@@ -26,11 +26,11 @@
                 <td><a href="/events/{{ $event->id }}">{{ $event->title }}</a></td>
                 <td>{{ count($event->users) }}</td>
                 <td>
-                    <a href="/events/edit/{{ $event->id }}" class="btn btn-info edit-btn link-light"><ion-icon name="create-outline"></ion-icon>Editar</a> 
+                    <a href="/events/edit/{{ $event->id }}" class="btn btn-info edit-btn link-light"><ion-icon name="create-outline"></ion-icon> Editar</a> 
                     <form action="/events/{{ $event->id }}" method="POST">
                         @csrf
                         @method('DELETE')
-                        <button type="submit" class="btn btn-danger delete-btn"><ion-icon name="trash-outline"></ion-icon>Deletar</button>
+                        <button type="submit" class="btn btn-danger delete-btn"><ion-icon name="trash-outline"></ion-icon> Deletar</button>
                     </form>
                 </td>
             </tr>
@@ -65,7 +65,13 @@
                 <td><a href="/events/{{ $event->id }}">{{ $event->title }}</a></td>
                 <td>{{ count($event->users) }}</td>
                 <td>
-                <button type="submit" class="btn btn-danger delete-btn"><a href="#" class="link-light">Sair do evento</a></button>
+                    <form action="/events/leave/{{ $event->id }}" method="POST">
+                        @csrf
+                        @method ("DELETE")
+                        <button type="submit" class="btn btn-danger delete-btn"><ion-icon name="trash-outline">
+                        
+                        </ion-icon> Sair do evento</button>
+                    </form>
                 </td>
             </tr>
         @endforeach
