@@ -223,6 +223,11 @@ header {
     margin-top: 20px;
 }
 
+a {
+    text-decoration: none;
+}
+
+
 /* Footer*/
 
 footer {
