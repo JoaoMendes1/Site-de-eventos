@@ -54,7 +54,7 @@
                 <th scope="col">#</th>
                 <th scope="col">Nome</th>
                 <th scope="col">Participantes</th>
-                <th scope="col">Ações</th>
+                <th scope="col">Açõess</th>
             </tr>
         </thead>
     
