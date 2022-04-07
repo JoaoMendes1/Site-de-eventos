@@ -79,14 +79,14 @@ header {
     background-size: cover;
     background-position: center;
     height: 400px;
-    padding: 500px;
+    padding: 50px;
     text-align: center;
 }
 
 #search-container h1 {
     color: black;
     margin-bottom: 30px;
-    font-weight: 900;
+    font-weight: 9000;
 }
 
 #search-container form {
